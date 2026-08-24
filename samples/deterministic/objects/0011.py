@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+# test_id: obj-0000011
+# category: objects
+# semantic: objects
+# type_stability: monomorphic
+# control_flow: straight_line
+# call_behavior: method
+# opt_state: reheated
+# tags: ['inheritance', 'inline-cache', 'object-model']
+class A:
+    def f(self):
+        return 1
+class B(A):
+    def g(self):
+        return 2
+b = B()
+assert b.f() == 1 and b.g() == 2
+

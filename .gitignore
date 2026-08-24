@@ -49,6 +49,12 @@ results/
 results.jsonl
 *.jsonl
 
+# But DO track the committed corpus and samples:
+!corpus/
+!corpus/**
+!samples/
+!samples/**
+
 # OS
 .DS_Store
 Thumbs.db

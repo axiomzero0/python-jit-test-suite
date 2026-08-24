@@ -194,13 +194,20 @@ class ASTFuzzer:
 def generate(*, n: int = 300_000, seed: int = 0) -> Iterator[TestCase]:
     rng = random.Random(seed)
     fuzzer = ASTFuzzer(rng)
-    for i in range(n):
+    emitted = 0
+    attempts = 0
+    max_attempts = n * 5  # bail-out safety so we don't loop forever
+    while emitted < n and attempts < max_attempts:
+        attempts += 1
         mod = fuzzer.program()
         try:
             ast.fix_missing_locations(mod)
             source = ast.unparse(mod)
-            # Sanity: must compile
-            compile(source, "<fuzz>", "exec")
+            # Sanity: must compile (suppresses the SyntaxWarning noise too)
+            import warnings as _w
+            with _w.catch_warnings():
+                _w.simplefilter("ignore")
+                compile(source, "<fuzz>", "exec")
         except Exception:
             # Skip malformed programs (shouldn't happen but be defensive)
             continue
@@ -219,6 +226,7 @@ def generate(*, n: int = 300_000, seed: int = 0) -> Iterator[TestCase]:
                 opt_state=opt.value,
                 tags={"fuzz", "ast", "generated"},
             ),
-            id=f"fuzz-ast-{i:08d}",
+            id=f"fuzz-ast-{emitted:08d}",
             category="fuzz_ast",
         )
+        emitted += 1

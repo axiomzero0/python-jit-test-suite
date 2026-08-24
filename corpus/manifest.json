@@ -1,0 +1,120 @@
+{
+  "version": "1.0",
+  "total_cases": 1205000,
+  "deterministic": {
+    "total": 205000,
+    "files": [
+      {
+        "name": "concurrency.jsonl",
+        "path": "corpus/deterministic/concurrency.jsonl.gz",
+        "cases": 5000,
+        "bytes": 93644
+      },
+      {
+        "name": "containers.jsonl",
+        "path": "corpus/deterministic/containers.jsonl.gz",
+        "cases": 25000,
+        "bytes": 220140
+      },
+      {
+        "name": "exceptions.jsonl",
+        "path": "corpus/deterministic/exceptions.jsonl.gz",
+        "cases": 10000,
+        "bytes": 144146
+      },
+      {
+        "name": "functions.jsonl",
+        "path": "corpus/deterministic/functions.jsonl.gz",
+        "cases": 20000,
+        "bytes": 316379
+      },
+      {
+        "name": "interpreter_tiers.jsonl",
+        "path": "corpus/deterministic/interpreter_tiers.jsonl.gz",
+        "cases": 15000,
+        "bytes": 75801
+      },
+      {
+        "name": "language_semantics.jsonl",
+        "path": "corpus/deterministic/language_semantics.jsonl.gz",
+        "cases": 30000,
+        "bytes": 78465
+      },
+      {
+        "name": "memory_gc.jsonl",
+        "path": "corpus/deterministic/memory_gc.jsonl.gz",
+        "cases": 10000,
+        "bytes": 99977
+      },
+      {
+        "name": "metaprogramming.jsonl",
+        "path": "corpus/deterministic/metaprogramming.jsonl.gz",
+        "cases": 10000,
+        "bytes": 78024
+      },
+      {
+        "name": "ml_kernels.jsonl",
+        "path": "corpus/deterministic/ml_kernels.jsonl.gz",
+        "cases": 10000,
+        "bytes": 89957
+      },
+      {
+        "name": "numeric.jsonl",
+        "path": "corpus/deterministic/numeric.jsonl.gz",
+        "cases": 25000,
+        "bytes": 220262
+      },
+      {
+        "name": "objects.jsonl",
+        "path": "corpus/deterministic/objects.jsonl.gz",
+        "cases": 20000,
+        "bytes": 292726
+      },
+      {
+        "name": "real_world.jsonl",
+        "path": "corpus/deterministic/real_world.jsonl.gz",
+        "cases": 10000,
+        "bytes": 165320
+      },
+      {
+        "name": "strings.jsonl",
+        "path": "corpus/deterministic/strings.jsonl.gz",
+        "cases": 15000,
+        "bytes": 120097
+      }
+    ]
+  },
+  "fuzz": {
+    "total": 1000000,
+    "files": [
+      {
+        "name": "ast.jsonl",
+        "path": "corpus/fuzz/ast.jsonl.gz",
+        "cases": 300000,
+        "bytes": 15750329
+      },
+      {
+        "name": "differential.jsonl",
+        "path": "corpus/fuzz/differential.jsonl.gz",
+        "cases": 200000,
+        "bytes": 1263140
+      },
+      {
+        "name": "mutation.jsonl",
+        "path": "corpus/fuzz/mutation.jsonl.gz",
+        "cases": 250000,
+        "bytes": 2865117
+      },
+      {
+        "name": "state.jsonl",
+        "path": "corpus/fuzz/state.jsonl.gz",
+        "cases": 250000,
+        "bytes": 1789375
+      }
+    ]
+  },
+  "samples": {
+    "total": 850,
+    "per_category": 50
+  }
+}

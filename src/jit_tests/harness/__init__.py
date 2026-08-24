@@ -12,6 +12,13 @@ from .tags import (
     TagSet,
     TypeStability,
 )
+from .corpus import (
+    case_to_json,
+    case_from_json,
+    write_jsonl,
+    read_jsonl,
+    read_all_jsonl,
+)
 
 __all__ = [
     "Observation",
@@ -31,4 +38,9 @@ __all__ = [
     "OptState",
     "normalize",
     "values_equal",
+    "case_to_json",
+    "case_from_json",
+    "write_jsonl",
+    "read_jsonl",
+    "read_all_jsonl",
 ]

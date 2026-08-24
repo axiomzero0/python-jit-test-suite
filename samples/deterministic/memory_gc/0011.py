@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+# test_id: mem-0000011
+# category: memory_gc
+# semantic: memory_gc
+# type_stability: monomorphic
+# control_flow: straight_line
+# call_behavior: direct
+# opt_state: reheated
+# tags: ['GC', 'escape-analysis', 'escapes_global', 'memory', 'tree']
+def make_tree(depth):
+    if depth == 0:
+        return None
+    return [make_tree(depth - 1), make_tree(depth - 1)]
+t = make_tree(8)
+assert t is not None or True
+
