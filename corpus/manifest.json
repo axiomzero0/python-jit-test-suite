@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "total_cases": 1205000,
+  "total_cases": 1206506,
   "deterministic": {
-    "total": 205000,
+    "total": 206506,
     "files": [
       {
         "name": "concurrency.jsonl",
@@ -75,6 +75,12 @@
         "path": "corpus/deterministic/real_world.jsonl.gz",
         "cases": 10000,
         "bytes": 165320
+      },
+      {
+        "name": "stress.jsonl",
+        "path": "corpus/deterministic/stress.jsonl.gz",
+        "cases": 1506,
+        "bytes": 79299
       },
       {
         "name": "strings.jsonl",

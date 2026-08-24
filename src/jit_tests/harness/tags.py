@@ -53,6 +53,9 @@ class Semantic(str, Enum):
     ML_KERNELS = "ml_kernels"
     REAL_WORLD = "real_world"
     INTERPRETER_TIERS = "interpreter_tiers"
+    # Stress tests form their own semantic group: every hand-crafted test
+    # under ``jit_tests.stress`` is classified with ``semantic="stress"``.
+    STRESS = "stress"
 
 
 class TypeStability(str, Enum):

@@ -46,6 +46,10 @@ from .ml_kernels import generate as gen_ml
 from .real_world import generate as gen_realworld
 from .concurrency import generate as gen_concurrency
 
+# Hand-crafted stress tests are also available via the deterministic
+# generator interface. They're loaded from the stress package.
+from ..stress import generate as gen_stress
+
 
 DEFAULT_COUNTS = {
     "language_semantics": 30_000,
@@ -61,6 +65,7 @@ DEFAULT_COUNTS = {
     "ml_kernels": 10_000,
     "real_world": 10_000,
     "concurrency": 5_000,
+    "stress": 1_506,  # 251 hand-crafted tests × 6 opt states
 }
 
 
@@ -78,6 +83,7 @@ _GENERATORS = {
     "ml_kernels": gen_ml,
     "real_world": gen_realworld,
     "concurrency": gen_concurrency,
+    "stress": gen_stress,
 }
 
 
