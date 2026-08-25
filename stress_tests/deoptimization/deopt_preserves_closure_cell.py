@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_closure_cell
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Deopt in a function with a captured closure variable. The closure cell must remain accessible after deopt.
 #

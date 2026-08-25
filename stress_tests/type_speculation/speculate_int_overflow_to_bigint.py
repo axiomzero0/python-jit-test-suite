@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_int_overflow_to_bigint
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `x * 2` fits in a machine int (PyLong with ob_digit count = 1). After many iterations with small ints, we pass a value that causes overflow into multi-digit bigint. The JIT must either deopt or have a correct overflow check in the generated code.
 #

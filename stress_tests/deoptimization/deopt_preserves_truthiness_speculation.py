@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_truthiness_speculation
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `if x:` is testing an int (truthy if nonzero). Then x is a custom object with __bool__. Deopt must call __bool__.
 #

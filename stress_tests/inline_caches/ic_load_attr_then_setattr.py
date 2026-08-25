@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_load_attr_then_setattr
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT caches `o.x` as an instance attribute at offset N. Then __setattr__ is overridden on the class. The IC must invalidate and route future `o.x = ...` through __setattr__.
 #

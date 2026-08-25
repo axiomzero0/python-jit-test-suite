@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_via_weakref
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: An object is referenced through a weakref. The weakref implementation requires a heap-allocated object so that the GC can notify the weakref when the object dies. A scalar-replacement that eliminated the heap object would cause the weakref to return None prematurely, breaking any code that relies on liveness checks.
 #

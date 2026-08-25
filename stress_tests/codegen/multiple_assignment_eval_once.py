@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: multiple_assignment_eval_once
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: `a = b = c = expr` evaluates `expr` exactly once and binds all three names to that single object. Mutations through any name affect all of them (they are aliases).
 #

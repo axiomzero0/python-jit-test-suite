@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_type_list_to_tuple
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Type guard `isinstance(x, list)` fails when x is tuple.
 #

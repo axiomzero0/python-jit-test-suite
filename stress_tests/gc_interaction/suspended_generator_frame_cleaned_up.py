@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: suspended_generator_frame_cleaned_up
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A generator suspended mid-iteration holds a frame with live locals. When the generator is dropped, GC must finalize the frame and release the locals. A JIT that pinned the frame for OSR would leak them.
 #

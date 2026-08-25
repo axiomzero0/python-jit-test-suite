@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: generator_try_finally_on_close
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: ``try/finally`` wrapping a ``yield`` must run the finally block on ``close()`` (GeneratorExit), on normal exhaustion, and on exception propagation. A JIT that models the block stack incorrectly during generator teardown will skip the finally or run it twice.
 #

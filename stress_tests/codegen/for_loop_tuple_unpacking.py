@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: for_loop_tuple_unpacking
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: A for loop unpacks each iteration's value into multiple names, including starred targets and nested tuples. The JIT must UNPACK each item before binding.
 #

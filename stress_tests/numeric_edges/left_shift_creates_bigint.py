@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: left_shift_creates_bigint
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: 1 << 64 and 1 << 128 cross from machine-word ints into bigint territory. Right shift on negative ints is arithmetic (rounds toward -inf), not logical.
 #

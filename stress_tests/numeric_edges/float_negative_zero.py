@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: float_negative_zero
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: IEEE-754 has two zeros: +0.0 and -0.0. They compare equal but differ in sign bit, which is observable via copysign, repr, and atan2. A JIT that canonicalizes -0.0 to +0.0 would break these.
 #

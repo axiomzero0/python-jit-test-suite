@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: list_slice_is_independent_copy
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: Negative case: `xs[:]` returns a fresh list, so mutations to the slice must NOT propagate to the original. A JIT that incorrectly treats slicing as an alias would break this.
 #

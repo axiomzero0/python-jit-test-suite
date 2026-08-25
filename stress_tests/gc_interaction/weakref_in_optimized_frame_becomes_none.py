@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: weakref_in_optimized_frame_becomes_none
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A weakref captured in an optimized frame must return None once the referent is collected. If the JIT keeps the referent alive via a hidden reference (e.g. in a register spilled to the frame), the weakref would incorrectly return a live object.
 #

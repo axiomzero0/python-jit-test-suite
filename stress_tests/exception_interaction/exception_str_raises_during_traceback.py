@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: exception_str_raises_during_traceback
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A custom Exception's ``__str__`` raises RuntimeError. The exception can still be caught, and ``.args`` is accessible without calling ``__str__``. ``traceback.format_exception`` must not crash even though ``str(e)`` raises. A JIT that inlines ``__str__`` for error formatting would break.
 #

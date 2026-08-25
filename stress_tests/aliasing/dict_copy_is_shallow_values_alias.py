@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: dict_copy_is_shallow_values_alias
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: `dict.copy()` produces a new dict but the *values* are still shared references. Mutating a mutable value in place must be visible through both dicts; replacing a value under a key in the copy must NOT affect the original.
 #

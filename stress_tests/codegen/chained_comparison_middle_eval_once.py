@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: chained_comparison_middle_eval_once
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: Chained comparison `a < b < c` evaluates `b` exactly once, then compares it to both `a` and `c`. If `b` has side effects, those must fire only once.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: closure_created_not_called
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: A closure is created and assigned, but the inner closure that uses the cell is never called for a long time. The JIT must keep the cell (and the captured big data) alive even if no read has occurred, since a future call would need it.
 #

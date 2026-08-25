@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: float_nan_semantics
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: NaN is not equal to anything, including itself, and propagates through arithmetic. A JIT that folds NaN comparisons or treats NaN as a normal value would break these invariants.
 #

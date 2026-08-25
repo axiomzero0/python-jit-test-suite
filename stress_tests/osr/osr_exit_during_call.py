@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_exit_during_call
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: OSR exit happens during a function call (the callee returns a value of an unexpected type). The compiled frame must deopt with the correct return value already on the stack.
 #

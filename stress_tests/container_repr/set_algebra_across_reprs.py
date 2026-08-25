@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: set_algebra_across_reprs
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: Set operations (difference, intersection, symmetric difference, union) between sets and frozensets of varying sizes. The JIT must handle the different internal representations and the from-set / from-frozenset source types.
 #

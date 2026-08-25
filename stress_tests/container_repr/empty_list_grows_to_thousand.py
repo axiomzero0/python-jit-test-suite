@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: empty_list_grows_to_thousand
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A list starts empty and grows by one element per iteration until it holds 1000 ints. CPython's list internally reallocates the underlying PyObject* array at ~3/2 capacity steps. The JIT must update any cached length/capacity pair after each reallocation.
 #

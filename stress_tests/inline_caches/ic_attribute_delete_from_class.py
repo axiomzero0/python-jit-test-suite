@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_attribute_delete_from_class
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: Attribute `x` exists on the class, IC caches the lookup. Then the attribute is deleted from the class. The IC must invalidate and fall back to instance __dict__.
 #

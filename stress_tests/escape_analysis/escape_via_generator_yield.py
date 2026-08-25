@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_via_generator_yield
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: An object is yielded from a generator. The generator frame is suspended across yields, holding references to all locals including the just-yielded object. The JIT must heap-allocate yielded objects because the consumer can observe their identity after resumption.
 #

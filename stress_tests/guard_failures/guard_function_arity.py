@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_function_arity
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT may inline a call assuming a fixed arity. If the callee is replaced with one of different arity, the guard fails.
 #

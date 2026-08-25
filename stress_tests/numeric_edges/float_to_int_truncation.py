@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: float_to_int_truncation
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: int() truncates toward zero (so int(-3.7) == -3), while math.floor rounds toward -inf (so floor(-3.7) == -4). round() uses banker's rounding (round half to even). A JIT that confuses truncation with floor would miscompute negatives.
 #

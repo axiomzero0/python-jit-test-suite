@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: modify_class_dict_via_type_setattr
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: Class state is mutated via type.__setattr__, which is the C-level path used by `C.x = ...`. Inline caches that cached the absence of an attribute must invalidate so the next lookup finds the new attribute.
 #

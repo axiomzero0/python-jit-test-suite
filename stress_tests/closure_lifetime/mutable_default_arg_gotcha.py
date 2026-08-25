@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: mutable_default_arg_gotcha
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: The classic `def f(x=[])` gotcha: the default is evaluated once at def time and shared across all calls. A JIT that re-evaluates the default per call (or allocates a fresh list per call) would diverge from CPython semantics.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: monkey_patch_method_in_loop
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: A method call site runs monomorphic for several iterations so the JIT caches `C.f`. Mid-loop the class method is replaced with a new function. The IC must invalidate and subsequent calls must dispatch to the new method.
 #

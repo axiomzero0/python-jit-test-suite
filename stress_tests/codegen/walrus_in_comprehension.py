@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: walrus_in_comprehension
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: The walrus operator inside a comprehension binds to the enclosing function scope (not the comprehension's implicit scope). After the comprehension runs, the bound name is visible in the enclosing scope and holds the last assigned value.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_load_global_through_import
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT caches `math.sqrt`. Then `math` is re-imported (creating a new module object). The IC must invalidate.
 #

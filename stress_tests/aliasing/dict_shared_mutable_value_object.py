@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: dict_shared_mutable_value_object
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: Two dicts store the *same* mutable value object under different keys. Mutating that shared value (in place) must be visible through both dicts. A JIT that snapshots dict values into locals and reuses them across calls would miss the in-place mutation.
 #

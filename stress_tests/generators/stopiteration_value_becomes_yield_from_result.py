@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: stopiteration_value_becomes_yield_from_result
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: When a sub-generator terminates, the value it carries on its StopIteration becomes the result of the enclosing ``yield from`` expression. A JIT that drops the StopIteration value (or binds ``None``) will get the wrong result. Tested both via ``return`` in a generator and via a plain iterator that explicitly raises ``StopIteration(value)``.
 #

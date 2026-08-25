@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: mixed_int_float_arithmetic
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: int + float promotes to float, and large ints coerce to float (losing precision). A JIT that speculates int+int must deopt when a float appears, and must not assume int+float yields an int.
 #

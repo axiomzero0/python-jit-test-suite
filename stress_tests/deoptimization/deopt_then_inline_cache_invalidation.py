@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_then_inline_cache_invalidation
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Deopt and IC invalidation happen close together. The reconstructed frame must use the new IC, not the old stale cache.
 #

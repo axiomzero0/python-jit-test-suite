@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: fstring_complex_expressions
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: f-strings embed arbitrary expressions, including method calls, indexing, dict access, nested f-strings, ternaries, and format specs. The JIT must lower each embedded expression to its own evaluation, then format the result.
 #

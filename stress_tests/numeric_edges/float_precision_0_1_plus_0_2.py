@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: float_precision_0_1_plus_0_2
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: The canonical IEEE-754 surprise: 0.1 + 0.2 != 0.3 in binary float, and accumulating 0.1 ten times drifts away from 1.0. A JIT that rewrites float sums must preserve IEEE rounding (or use math.fsum for correct rounding).
 #

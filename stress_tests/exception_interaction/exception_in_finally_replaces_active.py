@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: exception_in_finally_replaces_active
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A finally block raises a new exception while another exception is propagating. The new exception replaces the original, and the original is saved as ``__context__``. A JIT must handle this exception-replacement semantics during finally execution.
 #

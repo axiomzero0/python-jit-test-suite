@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: alias_same_list_mutation_visible
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: Two names bound to the same list object: a mutation through one name must be visible through the other. A JIT that speculates `a` and `b` are distinct objects (e.g. because they have separate SSA names) would mis-observe `a` after the append.
 #

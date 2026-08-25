@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: closure_shares_mutable_list
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: Two closures share a cell that holds a mutable list. Mutation through one closure must be visible to the other, since they share the same cell (and hence the same list object).
 #

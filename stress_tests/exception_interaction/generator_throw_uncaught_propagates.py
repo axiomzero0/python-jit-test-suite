@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: generator_throw_uncaught_propagates
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: ``g.throw(ValueError)`` is called on a generator that does NOT catch the exception. The exception must propagate out of throw() to the caller, and the generator must be left in the closed state so subsequent next()/send() raises StopIteration.
 #

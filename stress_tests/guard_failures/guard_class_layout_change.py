@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_class_layout_change
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Class layout guard fails when a __slots__ attribute is added or removed.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: async_generator_exception
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: An async generator raises ValueError on iteration 500. The exception must propagate out of the ``async for`` loop. A JIT that compiled the async generator's body must deopt at the yield point and propagate the exception.
 #

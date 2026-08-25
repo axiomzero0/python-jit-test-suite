@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: stopiteration_with_value_in_custom_iterator
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A custom iterator raises ``StopIteration(value)``. The for loop must discard the value and terminate cleanly. Manual ``next()`` must expose ``.value``. Inside a generator, ``return X`` is equivalent to ``raise StopIteration(X)``. A JIT that speculates StopIteration has no value would break.
 #

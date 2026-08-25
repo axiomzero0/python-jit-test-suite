@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: overflow_2_to_63_boundary
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: Cross the signed int64 boundary at 2**63. A JIT that represents Python ints as int64 must promote to a multi-digit bigint at exactly this point; arithmetic across the boundary must stay exact.
 #

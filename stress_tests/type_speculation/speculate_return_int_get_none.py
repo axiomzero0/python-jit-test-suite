@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_return_int_get_none
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `f()` returns int and may unbox it. The 101st call returns None. The deopt must rebox and propagate None correctly to the caller.
 #

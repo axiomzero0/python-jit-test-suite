@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: exception_chain_raise_from_with_deopt
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: Uses ``raise X from Y`` inside a loop that deopts at i=500 (type change x='trigger'). The __cause__ and __context__ links must survive deopt and be observable by the caller.
 #

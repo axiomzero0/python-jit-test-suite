@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: reference_cycle_broken_by_gc
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A reference cycle created in optimized code cannot be collected by refcounting alone. The cyclic GC must break the cycle and finalize each participant. If the JIT elided the cycle-breaking safepoint, the objects would leak.
 #

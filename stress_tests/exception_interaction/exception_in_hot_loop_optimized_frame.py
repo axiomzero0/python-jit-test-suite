@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: exception_in_hot_loop_optimized_frame
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A ValueError is raised on iteration 500 inside a hot, type-stable loop that the JIT would normally compile. The JIT must deopt at the raise site and propagate the exception to the enclosing try/except without losing the accumulated loop state.
 #

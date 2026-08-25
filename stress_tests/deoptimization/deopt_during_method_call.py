@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_during_method_call
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT inlines a method call. Then a subclass overrides the method. Deopt must re-dispatch through the MRO.
 #

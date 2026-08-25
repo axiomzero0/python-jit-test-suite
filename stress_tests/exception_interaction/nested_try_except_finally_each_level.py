@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: nested_try_except_finally_each_level
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: Three nested try/except/finally blocks. An exception raised in the innermost try is caught by the middle except, which re-raises a different exception, caught by the outer except. The finally blocks must run in the correct order as exceptions propagate. A JIT must reconstruct the full block stack on deopt.
 #

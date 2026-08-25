@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_dict_key_missing
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Dict key presence guard fails when key is missing.
 #

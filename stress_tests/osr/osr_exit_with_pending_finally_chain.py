@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_exit_with_pending_finally_chain
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: Three nested try/finally blocks. OSR exit happens in the innermost loop. All three finally blocks must execute in the correct order during unwind.
 #

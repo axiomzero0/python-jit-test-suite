@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: generator_partial_iteration_delayed_resume
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: A generator is advanced a few steps, then left suspended while substantial unrelated work runs (including creating and exhausting many other generators). On resume the original generator's frame must be intact. A JIT that reuses generator frame slots aggressively can corrupt the dormant frame.
 #

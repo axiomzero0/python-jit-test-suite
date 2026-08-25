@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: allocation_eliminated_unless_it_escapes
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: An object allocated, used, and discarded in a single function may be eliminated by escape analysis. But if it escapes (here, via a weakref), the allocation must survive and the GC must see it. The test verifies both: in CPython the no-escape path allocates 1000 objects (correct, if not optimized), and the escape path allocates 1000 AND collects them after scope exit.
 #

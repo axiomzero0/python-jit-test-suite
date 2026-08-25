@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: replace_builtin_len
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: The `len` builtin is replaced in the builtins module. LOAD_GLOBAL for `len` must re-resolve through builtins and pick up the new value. A JIT that cached `len = builtins.len` would dispatch to the original.
 #

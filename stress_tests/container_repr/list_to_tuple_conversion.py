@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: list_to_tuple_conversion
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A list is converted to a tuple via tuple(lst). The two containers have different internal representations (list has a mutable PyObject* array with capacity; tuple has an immutable array of fixed size). Mutating the source list after conversion must not affect the tuple.
 #

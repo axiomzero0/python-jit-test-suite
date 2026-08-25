@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: bool_is_int_subclass
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: bool is a subclass of int (True == 1, False == 0) but is a distinct singleton type. Arithmetic promotes bool to int, bitwise ops keep bool, and bools work as list indices. A JIT that treats bool and int as identical would miss the type transitions.
 #

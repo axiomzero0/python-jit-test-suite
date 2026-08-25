@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_via_function_return
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: An object is constructed inside a function and returned to the caller. The JIT must heap-allocate it because the caller can observe identity and outlive the callee frame. A buggy scalar replacement that promoted the object to registers would corrupt identity comparisons and field mutations performed by the caller.
 #

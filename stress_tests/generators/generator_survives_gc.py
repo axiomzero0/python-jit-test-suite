@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: generator_survives_gc
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: A generator is suspended partway through (its frame holds live references to locals). A GC cycle runs while it is suspended. The generator frame must survive collection and all its locals must remain valid on resume. A JIT that over-eagerly reclaims or relocates the suspended frame will corrupt the resumed state.
 #

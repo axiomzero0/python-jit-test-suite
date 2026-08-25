@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: two_closures_share_one_cell
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: Two closures defined in the same frame share the same cell for a captured variable. Mutation through one closure is immediately visible to the other. The JIT cannot keep a private cached copy of the value in either closure.
 #

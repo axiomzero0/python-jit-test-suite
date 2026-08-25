@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_then_reopt_correct
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Function deopts, runs in interpreter, then re-optimizes. The second optimization must produce correct results even though the type profile now includes the deopt-triggering type.
 #

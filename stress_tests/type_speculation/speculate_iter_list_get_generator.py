@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_iter_list_get_generator
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `for x in obj` iterates a list (fast path via PyList_Type). Then a generator is passed. The JIT must deopt and use the generator's __next__ protocol.
 #

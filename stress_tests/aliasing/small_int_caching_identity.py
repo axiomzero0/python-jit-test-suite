@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: small_int_caching_identity
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: CPython pre-caches small ints in the range [-5, 256] so that any computation producing such a value yields the *same* object. A JIT that boxes ints on every arithmetic operation would break `is` checks against cached small ints. Values outside the cached range may be fresh objects.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: dict_update_from_generator
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: Dict.update() is called with a generator that yields (key, value) tuples. The dict must consume the generator lazily and insert each entry, including overriding existing keys.
 #

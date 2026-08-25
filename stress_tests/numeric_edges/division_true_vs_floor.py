@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: division_true_vs_floor
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: True division (/) always returns float; floor division (//) on ints returns int and rounds toward -inf (not toward zero). A JIT that conflates the two would miscompute negative operands.
 #

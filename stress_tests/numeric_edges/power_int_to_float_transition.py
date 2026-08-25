@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: power_int_to_float_transition
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: The ** operator changes result type with the exponent: int**positive_int stays int, int**negative_int becomes float, and a negative base with a fractional exponent becomes complex. A JIT must dispatch on operand types.
 #

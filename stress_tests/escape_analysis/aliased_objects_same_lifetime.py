@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: aliased_objects_same_lifetime
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: Two objects allocated in the same frame reference each other (circular aliasing). Both must be heap-allocated because each is reachable from the other. A buggy analysis that treated them as independent could incorrectly scalar-replace one and break the circular alias chain observed by the caller.
 #

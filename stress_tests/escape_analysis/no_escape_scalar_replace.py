@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: no_escape_scalar_replace
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: A small mutable object is constructed inside a function, its fields are read and mutated, and only a derived primitive value escapes. A correct escape analysis can scalar-replace the object (no heap allocation is needed). A buggy analysis that fails to track the field writes would observe stale field values and produce wrong results.
 #

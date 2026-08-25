@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: list_extend_self_alias
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: List.extend() is called with the list itself as the argument. CPython's extend handles aliasing correctly by first materializing the iterable. The JIT must not double-iterate or read freed memory.
 #

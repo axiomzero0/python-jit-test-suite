@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: redefined_mid_function
 # category: register_alloc
-# opt_state: (runs across all 6 states)
 #
 # Target: A variable is redefined in the middle of the function. In SSA form this is two distinct definitions; the allocator must treat them as independent live ranges and may assign them to different registers. A buggy allocator that reused the same register without checking liveness would corrupt earlier values that are still in use.
 #

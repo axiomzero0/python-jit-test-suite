@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_entry_mid_loop_with_locals
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: OSR entry happens after the loop has been running for a while. The compiled frame must reconstruct all live locals (`acc`, `i`, `tmp`, `flag`).
 #

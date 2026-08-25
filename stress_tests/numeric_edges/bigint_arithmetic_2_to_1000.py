@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: bigint_arithmetic_2_to_1000
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: Python ints are arbitrary precision. 2**1000 has 1001 bits and no machine-word representation; all arithmetic, bit ops, and modular exponentiation must remain exact.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_arithmetic_no_exception_get_zerodiv
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `a / b` never raises and may elide the exception check. Then b=0 is passed, raising ZeroDivisionError. The deopt must catch this.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: nested_closures_three_levels
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: Three nested closures, each capturing a variable from the frame above it. The JIT must build a chain of cell references and resolve each capture through the appropriate frame, not flatten them into a single scope.
 #

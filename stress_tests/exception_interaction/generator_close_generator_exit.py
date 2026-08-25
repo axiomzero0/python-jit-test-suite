@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: generator_close_generator_exit
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: ``g.close()`` throws GeneratorExit at the yield point. If the generator catches it and yields again, RuntimeError must be raised. If it catches and returns cleanly, close() succeeds. A JIT must deopt at the yield and inject GeneratorExit correctly.
 #

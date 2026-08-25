@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: closure_captures_class
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: A class is defined inside the enclosing function and captured by an inner closure. The class object must persist after the enclosing frame returns, and each call to the factory must produce instances of the captured class (not a fresh class).
 #

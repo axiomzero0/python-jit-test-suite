@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: import_shadows_global
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: A name is bound in the module namespace as a local value. A subsequent `from X import name` rebinds that name to a different value. LOAD_NAME / LOAD_GLOBAL must observe the new binding.
 #

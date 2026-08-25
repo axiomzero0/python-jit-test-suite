@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: modify_function_defaults
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: A function's __defaults__ tuple is replaced mid-program. Subsequent calls must use the new defaults, not the ones captured at def time.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: modify_closure_cell_contents
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: A function's __closure__ cells are modified in place by external code, changing the captured value. Subsequent invocations must observe the new value. The JIT cannot inline the captured value as a constant.
 #

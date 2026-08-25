@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_exit_preserves_iterator_state
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: Hot loop iterating a list. OSR exit (deopt) happens mid-iteration. The iterator's internal position must be preserved so the interpreter continues from the right place.
 #

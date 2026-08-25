@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_memory_allocation_failure
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Allocation guard. Trying to allocate a huge list should fail gracefully (MemoryError or ValueError), not crash.
 #

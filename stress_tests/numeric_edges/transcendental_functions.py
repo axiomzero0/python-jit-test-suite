@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: transcendental_functions
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: math.sqrt of a strictly-negative number raises ValueError, while cmath.sqrt returns an imaginary result. math.sqrt(2) is irrational, so its square is not exactly 2. A JIT that inlines transcendentals must preserve domain checks.
 #

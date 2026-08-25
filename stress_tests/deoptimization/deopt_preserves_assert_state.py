@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_assert_state
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Assertion inside a hot loop. Deopt must preserve the assertion's failure behavior.
 #

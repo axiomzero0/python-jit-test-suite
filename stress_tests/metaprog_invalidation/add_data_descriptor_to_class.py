@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: add_data_descriptor_to_class
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: A class starts with a plain instance attribute. A data descriptor is then added to the class with the same name. Data descriptors take precedence over instance __dict__, so subsequent attribute access must invoke the descriptor's __get__ rather than reading the instance dict.
 #

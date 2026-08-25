@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: closure_cell_type_change
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: The captured cell variable starts as int and is reassigned to str, then list, then dict. A JIT that speculates the cell holds an int (and unboxes it) must deopt and rebox on each type change, preserving the new value across subsequent reads.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_int_sum_after_float
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Loop accumulates ints. On iteration 500, a float is added. Deopt must convert `acc` from a tagged int to a Python float object.
 #

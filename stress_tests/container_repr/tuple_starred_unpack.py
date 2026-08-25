@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: tuple_starred_unpack
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: Tuples of varying sizes are unpacked with starred targets, including nested unpacking. The JIT must support the full UNPACK_EX bytecode (PEP 3132) including the empty-middle and all-in-middle edge cases.
 #

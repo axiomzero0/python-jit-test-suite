@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: large_list_comprehension_resizes
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A list comprehension builds a 10000-element list. CPython's BUILD_LIST_FROM_OP performs several internal reallocations during the comprehension. A nested comprehension builds a matrix; both must produce correct contents after all resizes.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_division_by_zero
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Division guard `b != 0` fails when b is 0.
 #

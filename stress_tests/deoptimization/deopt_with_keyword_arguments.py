@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_with_keyword_arguments
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Function called with keyword args. Deopt in the callee. The argument binding must be correctly reconstructed.
 #

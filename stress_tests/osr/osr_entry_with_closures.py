@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_entry_with_closures
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: OSR entry into a function that has captured closure variables. The compiled frame must correctly bind the closure cells.
 #

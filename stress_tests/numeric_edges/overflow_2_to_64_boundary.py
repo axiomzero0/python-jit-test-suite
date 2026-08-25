@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: overflow_2_to_64_boundary
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: Cross the unsigned int64 boundary at 2**64. Even a JIT that uses an unsigned 64-bit representation must promote here; 2**64 * 2**64 (== 2**128) has no fixed-width representation.
 #

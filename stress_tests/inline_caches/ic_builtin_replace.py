@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_builtin_replace
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT may inline `len()` as a direct call to PyObject_Length. Then `len` is rebound in the module namespace. The IC must fall back to LOAD_GLOBAL.
 #

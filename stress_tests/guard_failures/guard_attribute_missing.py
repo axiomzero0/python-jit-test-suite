@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_attribute_missing
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Attribute presence guard fails when attr is missing.
 #

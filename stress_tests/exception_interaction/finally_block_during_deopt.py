@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: finally_block_during_deopt
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: Deopt is triggered mid-loop by a type change (int -> str). The loop body sits inside a try/finally. The finally block must execute with the reconstructed interpreter frame, including all locals appended to ``log`` before the deopt.
 #

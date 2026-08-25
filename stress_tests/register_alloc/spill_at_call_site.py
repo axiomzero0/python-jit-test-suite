@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: spill_at_call_site
 # category: register_alloc
-# opt_state: (runs across all 6 states)
 #
 # Target: Several variables are live across a call to a non-trivial callee. The calling convention may clobber caller-saved registers, so the allocator must either spill the live values to the stack or move them to callee-saved registers around the call. A buggy allocator that didn't model call clobbers would lose values across the call.
 #

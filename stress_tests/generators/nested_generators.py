@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: nested_generators
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: A generator that yields from another generator builds two suspended frames chained together. The outer frame's yield-from state (which sub-generator it's delegating to) must be preserved across each resume so values flow through in the right order with the outer's own bookend yields.
 #

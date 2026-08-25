@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: frozenset_from_set_immutable
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A frozenset is constructed from a set. The frozenset must be immutable and usable as a dict key, while the source set remains mutable. Mutating the source must not affect the frozenset.
 #

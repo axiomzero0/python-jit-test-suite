@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_loop_counter
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Deopt happens mid-loop. The loop counter `i` must have the correct value in the reconstructed interpreter frame.
 #

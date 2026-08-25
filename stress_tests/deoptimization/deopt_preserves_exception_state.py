@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_exception_state
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Exception is raised in optimized code. Deopt must preserve the exception object so it can be caught by a try/except in the caller.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: modulo_negative_operands
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: Python's % follows the sign of the divisor (not the dividend), so -7 % 3 == 2 and 7 % -3 == -2. A JIT that uses the C/REM semantics (sign of dividend) would miscompute.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: empty_set_grows_resize
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A set starts empty and grows to 1000 elements, triggering multiple hash table resizes. Duplicates added during growth must be deduplicated, and lookups must succeed after every resize.
 #

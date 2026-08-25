@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_exit_with_active_exception
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: Hot loop raises an exception on iteration 500. The OSR exit must propagate the exception correctly through any compiled frame, unwinding finally blocks as it goes.
 #

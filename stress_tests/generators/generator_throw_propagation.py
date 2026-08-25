@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: generator_throw_propagation
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: ``throw()`` must raise the supplied exception *inside* the generator's suspended frame at the exact yield point, not in the caller. A JIT that handles throw by unwinding the caller's frame will skip the generator's own except handlers and return the wrong value.
 #

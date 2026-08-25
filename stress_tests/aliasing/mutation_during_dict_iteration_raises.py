@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: mutation_during_dict_iteration_raises
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: Adding or removing keys during dict iteration must raise RuntimeError (CPython sets a `ma_version_tag` change marker). A JIT that compiles the iterator without a version check would silently observe a stale or partial key set.
 #

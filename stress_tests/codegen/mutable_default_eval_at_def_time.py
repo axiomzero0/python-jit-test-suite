@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: mutable_default_eval_at_def_time
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: Default argument expressions are evaluated ONCE, at function definition time, not on each call. The same object is reused across calls. This is the classic gotcha: `def f(x=[])` accumulates state across calls.
 #

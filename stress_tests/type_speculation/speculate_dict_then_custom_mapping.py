@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_dict_then_custom_mapping
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `d[k]` is dict.__getitem__. Then an object with __getitem__ is passed. The deopt must call the custom __getitem__ rather than the inlined dict path.
 #

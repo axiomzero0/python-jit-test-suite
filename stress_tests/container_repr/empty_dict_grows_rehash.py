@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: empty_dict_grows_rehash
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A dict starts empty and grows to 1000 entries, triggering multiple hash table resizes (CPython resizes when load > 2/3 capacity). The JIT must keep all key/value pairs intact across each rehash, including through deliberate deletion and re-insertion.
 #

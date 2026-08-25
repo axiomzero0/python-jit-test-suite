@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_recursion_depth
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Recursion limit guard fails when depth is exceeded.
 #

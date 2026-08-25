@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_via_closure_capture
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: An object is captured by a nested closure that outlives the outer frame. The closure cell holds a strong reference, so the object must be heap-allocated. A scalar-replacement that ignored closure capture would corrupt the captured state across calls.
 #

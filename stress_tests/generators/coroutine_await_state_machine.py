@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: coroutine_await_state_machine
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: A coroutine is a state machine: each ``await`` is a suspension/resumption edge. The JIT must preserve locals, the await stack, and exception routing across every edge. This coroutine awaits several sub-coroutines in sequence and also verifies that an exception raised after an await propagates correctly back through the suspension point.
 #

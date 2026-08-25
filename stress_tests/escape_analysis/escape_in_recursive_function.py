@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_in_recursive_function
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: A recursive function allocates a fresh object per frame and links it to the result of the recursive call. Each frame's object must be heap-allocated because it is returned to the parent frame and observed as a distinct identity. A buggy analysis that folded frames together would corrupt the chain.
 #

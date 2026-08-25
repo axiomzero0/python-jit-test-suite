@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_global_rebind
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: Global `X` is rebound mid-loop. The IC for LOAD_GLOBAL must invalidate and re-fetch.
 #

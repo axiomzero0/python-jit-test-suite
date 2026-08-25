@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_with_boxed_unboxed_mixed
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT unboxes some locals as int64, others as float64. Deopt must rebox each according to its spec.
 #

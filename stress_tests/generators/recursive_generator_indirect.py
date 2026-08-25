@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: recursive_generator_indirect
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: A generator that ``yield from``s itself recursively (tree flattening) builds a chain of suspended generator frames as deep as the recursion. Each frame must stay independently resumable and values must percolate up the chain in order. A deep single-leaf tree stresses the runtime's ability to manage a tall stack of dormant generator frames.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_exit_to_generator
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: Hot loop inside a generator. OSR exit happens while the generator is suspended at a yield. The generator's frame must be correctly reconstructed when resumed.
 #

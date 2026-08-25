@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: finalizer_resurrects_object_keeps_alive
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A __del__ that stores self into a global resurrects the object. The runtime must honor the new reference: a second GC pass must not collect the resurrected object. A JIT that finalized the object 'in place' without checking for resurrection would free memory still reachable from the global.
 #

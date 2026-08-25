@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: large_allocation_triggers_gc_mid_loop
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: Allocating large objects mid-loop can trigger an incremental GC or a full collection. The collection must not corrupt the in-progress computation: every list's contents must remain intact and reachable afterwards.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: boolean_and_or_short_circuit
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: `and` returns the first falsy operand (or the last truthy one), short-circuiting so RHS is not evaluated if LHS determines the result. `or` is the dual. Result is the operand value, not coerced to bool.
 #

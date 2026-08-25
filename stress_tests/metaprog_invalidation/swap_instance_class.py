@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: swap_instance_class
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: An instance's __class__ is reassigned at runtime, swapping its method dispatch table. CPython forbids reassigning a class's metaclass after creation, so this is the closest executable analogue: changing which class an instance believes it belongs to, which flips all attribute lookups.
 #

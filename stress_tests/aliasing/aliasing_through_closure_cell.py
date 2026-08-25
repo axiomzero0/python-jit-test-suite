@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: aliasing_through_closure_cell
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: A closure captures a list by reference. Mutating the list from inside the closure must be visible to the enclosing scope and vice versa. A JIT that box-to-scalar optimizes the closure variable without recognizing the alias would miss updates in either direction.
 #

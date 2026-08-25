@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: aliasing_through_function_arg
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: A list is passed to a function which mutates it. The caller's list must reflect the mutation. A JIT that inlines the call and treats the formal parameter as a fresh object (escape-analysis gone wrong) would miss the side effect.
 #

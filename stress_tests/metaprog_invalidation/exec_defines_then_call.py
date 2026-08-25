@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: exec_defines_then_call
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: exec() is used to define functions and classes in a fresh namespace. The defined objects are then retrieved and invoked. The JIT cannot have any precompiled cache for objects that did not exist when the surrounding code was compiled.
 #

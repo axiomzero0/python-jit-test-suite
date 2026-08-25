@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: add_class_attribute_mid_loop
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: A class starts with no attribute `x`. Attribute lookups must raise AttributeError. Mid-loop, `x` is added to the class. Existing instances must immediately see the new attribute via class fallback.
 #

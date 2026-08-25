@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: gc_identifies_live_set_amid_mixed_lifetime
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: In a loop allocating many objects where some are kept alive via a list and others are not, the GC must correctly identify the live set. A JIT that confused the two sets (e.g. by sharing a backing store) would either leak dead objects or prematurely collect live ones.
 #

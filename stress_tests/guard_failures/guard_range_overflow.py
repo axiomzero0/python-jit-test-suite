@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_range_overflow
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Range guard `0 <= i < len` fails when i is out of bounds.
 #

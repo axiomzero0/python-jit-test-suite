@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_block_stack
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Deopt happens inside a nested try/except/finally. The block stack must be reconstructed so the except/finally blocks run correctly.
 #

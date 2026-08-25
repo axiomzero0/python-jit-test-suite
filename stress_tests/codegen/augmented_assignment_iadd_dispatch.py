@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: augmented_assignment_iadd_dispatch
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: `x += y` first tries `type(x).__iadd__`. If x is mutable and defines __iadd__, the operation is in-place and returns x itself. For immutable types (int, str, tuple), __iadd__ falls back to __add__, producing a new object. A custom type can define __iadd__ to do in-place mutation.
 #

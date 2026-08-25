@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_via_list_append
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: An object is appended to a list that outlives the frame. The list holds a strong reference, so the object must be heap-allocated. A buggy analysis that only considered direct returns would incorrectly eliminate the allocation and the list would hold garbage.
 #

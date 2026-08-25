@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: complex_exception_args_tuple
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: An exception is constructed with a multi-element args tuple containing mixed types (int, str, custom object, dict, list). The ``.args`` attribute must be exactly the tuple passed to the constructor. A JIT that speculates ``.args`` is a single string would break.
 #

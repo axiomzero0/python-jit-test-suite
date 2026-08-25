@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: many_live_variables_exceed_registers
 # category: register_alloc
-# opt_state: (runs across all 6 states)
 #
 # Target: Twenty-four variables are all simultaneously live across a single use point. This far exceeds the available physical registers on any mainstream architecture, so the allocator must spill most of them to the stack. A buggy allocator that didn't track live ranges would clobber values or read uninitialized memory.
 #

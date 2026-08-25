@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_entry_in_nested_loop
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: OSR entry into the *inner* loop of a nested loop structure. The compiled frame must know which loop is being entered and reconstruct both loop counters.
 #

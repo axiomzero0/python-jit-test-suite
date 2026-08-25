@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "python-jit-test-suite"
-version = "0.1.0"
-description = "200K deterministic + 1M fuzz differential test suite for Python JIT correctness/perf validation"
+version = "0.2.0"
+description = "Deterministic + fuzz + hand-crafted stress test suite targeting Python 3.16 JIT correctness/perf"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "axiomzero0" }]
-keywords = ["jit", "compiler", "testing", "fuzzing", "differential-testing", "python"]
+keywords = ["jit", "compiler", "testing", "fuzzing", "differential-testing", "python", "python3.16"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -19,6 +19,10 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Programming Language :: Python :: 3.16",
     "Topic :: Software Development :: Testing",
 ]
 dependencies = [

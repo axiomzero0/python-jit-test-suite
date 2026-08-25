@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: no_escape_in_hot_loop_allocation_elimination
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: A loop allocates a fresh object every iteration; the object never escapes the iteration. A correct escape analysis can eliminate the allocation entirely (or fold the fields into scalars). A buggy analysis that did not track per-iteration lifetime would either keep allocating (missed optimization) or incorrectly merge state across iterations (wrong result).
 #

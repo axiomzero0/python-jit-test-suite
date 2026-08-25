@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: mono_to_poly_int_to_float
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `x + 1` is int+int based on first 100 calls. The 101st call passes a float, forcing deopt. The deopt must preserve the correct intermediate value and re-execute in the interpreter with float semantics.
 #

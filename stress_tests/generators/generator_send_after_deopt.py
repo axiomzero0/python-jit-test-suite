@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: generator_send_after_deopt
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: ``send()`` injects a value into the generator at the yield point. The JIT may speculate that the sent value is always an int; sending a float mid-stream forces a deopt. The sent value must land in the right local and the accumulator must transition from int to float without losing precision or the running total.
 #

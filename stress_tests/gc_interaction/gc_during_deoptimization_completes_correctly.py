@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: gc_during_deoptimization_completes_correctly
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: GC triggered while a frame is being deoptimized must not corrupt the reconstructed interpreter state. The deopt handler reads object pointers from the compiled frame; if GC moves or frees one mid-reconstruction, the interpreter would see garbage.
 #

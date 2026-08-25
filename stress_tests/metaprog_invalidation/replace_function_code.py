@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: replace_function_code
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: A function's __code__ is replaced with the code of another function. Calls to the original name must execute the new bytecode. The JIT cannot cache the original code pointer.
 #

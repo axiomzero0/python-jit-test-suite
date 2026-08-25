@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: dict_popitem_loop_shrinks
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A loop calls dict.popitem() until the dict is empty. The internal hash table must shrink (or at least mark entries dummy) without losing any un-popped entries. popitem on an empty dict must raise KeyError.
 #

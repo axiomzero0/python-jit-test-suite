@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: finalizer_runs_exactly_once
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: An object with __del__ must have its finalizer called exactly once when collected. A JIT that double-frees the object (or fails to mark it as finalized before running the finalizer) would cause __del__ to run twice or zero times.
 #

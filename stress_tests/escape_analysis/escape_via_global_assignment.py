@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_via_global_assignment
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: An object is stored into a module-level global. The JIT must NOT scalar-replace it: the object outlives the frame and is observable from any code that reads the global. A naive analysis that only scans local uses would miss this escape channel and break identity / mutation semantics.
 #

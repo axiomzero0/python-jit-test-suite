@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_attribute_load_with_descriptor_added
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT caches `o.x` as a simple instance attribute load. Then a data descriptor `x` is added to the class, which should shadow the instance attribute. The IC must invalidate.
 #

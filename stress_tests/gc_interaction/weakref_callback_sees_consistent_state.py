@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: weakref_callback_sees_consistent_state
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A weakref callback fires during GC. At callback time the referent is already gone, so ref() must return None. If the JIT delays weakref clearing until after the slot is reused, the callback could see a different (recycled) object.
 #

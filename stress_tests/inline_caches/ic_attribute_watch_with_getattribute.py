@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_attribute_watch_with_getattribute
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT caches `o.x`. Then the class gets a custom __getattribute__ that intercepts all attribute access. The IC must invalidate and route through the custom method.
 #

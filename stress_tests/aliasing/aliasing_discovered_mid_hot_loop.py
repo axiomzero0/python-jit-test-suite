@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: aliasing_discovered_mid_hot_loop
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: A hot loop runs for many iterations with `xs` and `ys` being distinct objects (so the JIT may speculate they never alias and hoist `len(xs)` out of the loop). On a later iteration, the loop body aliases them (`ys = xs`) and then mutates `xs`; the JIT's hoisted length would now be stale.
 #

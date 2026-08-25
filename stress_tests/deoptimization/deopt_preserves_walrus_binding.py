@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_walrus_binding
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Walrus operator `:=` binds a variable in an enclosing scope. Deopt must preserve the binding.
 #

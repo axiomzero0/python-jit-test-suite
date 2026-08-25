@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_list_after_object
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Loop appends ints to a list. On iteration 500, a string is appended. The list's element type spec must be invalidated.
 #

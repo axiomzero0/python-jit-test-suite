@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: tuple_immutable_shell_mutable_contents
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: A tuple's *structure* is immutable, but its elements can be mutable. Mutating an element through the tuple slot is fine and visible to other aliases. A JIT that specializes on `isinstance(x, tuple)` and assumes deep immutability would get this wrong.
 #

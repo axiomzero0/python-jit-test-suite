@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: nonlocal_mutation_uses_cell
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: A closure mutates its captured variable via `nonlocal`. The JIT cannot keep the variable in a stack slot or as a constant; it must go through the cell every time. After many increments the counter must read the correct accumulated value, not a stale snapshot.
 #

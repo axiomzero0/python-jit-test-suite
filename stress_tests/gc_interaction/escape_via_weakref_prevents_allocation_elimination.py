@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_via_weakref_prevents_allocation_elimination
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: If the JIT's escape analysis sees an object only used locally it may eliminate the allocation. But if a weakref observes the object's identity, the allocation must survive: the weakref must see a distinct object per iteration.
 #

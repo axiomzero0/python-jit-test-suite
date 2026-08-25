@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_exit_during_arithmetic
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: Hot loop runs optimized for 1000 iterations. On iteration 1001, a type speculation fails (int -> float). The OSR exit must reconstruct the loop state with the correct float value of `acc`.
 #

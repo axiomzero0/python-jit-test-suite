@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_cyclic_megamorphic_call
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: Cycle through 8 different types at a single call site. This stress-tests the megamorphic IC's hash-table lookup path and ensures no entry is dropped.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: closure_captures_generator
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: A closure captures a generator object. Each invocation of the closure advances the generator by one step. The cell must preserve the generator's suspended state across calls.
 #

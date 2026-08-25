@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: complex_arithmetic
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: Complex numbers: addition, multiplication, absolute value, division, and conjugation. A JIT that only specializes on real numeric types must fall back correctly for complex.
 #

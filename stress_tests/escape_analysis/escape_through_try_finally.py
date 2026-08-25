@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_through_try_finally
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: An object is allocated in a try block and referenced in the corresponding finally. The finally runs on every exit path (normal return, exception, early return), so the object's lifetime must span the try/finally boundary. A buggy analysis that scoped lifetime to just the try block would observe garbage in the finally.
 #

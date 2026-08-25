@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: recursive_closure_via_cell
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: A closure captures itself via the cell so it can recurse. The JIT must not assume the captured name is bound to a constant function pointer; it must dereference the cell on every recursive call.
 #

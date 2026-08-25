@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: long_lived_used_at_start_and_end
 # category: register_alloc
-# opt_state: (runs across all 6 states)
 #
 # Target: A variable is defined at the start of the function, not used for a long stretch in the middle, then used again at the very end. Its live range spans the entire function. A naive allocator would pin it to a register for the whole function, wasting the register; a good allocator would split the range and spill it during the middle. Either way, the value must survive.
 #

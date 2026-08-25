@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ternary_short_circuit
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: Ternary `a if cond else b` must only evaluate the chosen branch. The other branch must not be evaluated, so any side effects in it must not fire. Nested ternaries must short-circuit at each level.
 #

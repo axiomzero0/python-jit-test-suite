@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_super_call_mro_change
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: super() call caches the MRO. Then the class hierarchy changes (new base inserted). The cached super() lookup must invalidate.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: dict_int_keys_then_str
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A dict with all-int keys gets a string key, then a tuple key, then a float key. The key type spec changes; the dict may switch from a compact-keys representation to a general-keys representation. All original entries must remain accessible.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: async_function_exception_during_await
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: An async function raises a custom exception on iteration 500 inside a loop that awaits ``asyncio.sleep(0)``. The exception must propagate through the await boundary to the caller's try/except. A JIT that compiled the coroutine must deopt at the await suspension and propagate correctly.
 #

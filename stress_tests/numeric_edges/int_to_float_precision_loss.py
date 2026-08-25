@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: int_to_float_precision_loss
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: Above 2**53 not all integers are representable as floats: float(2**53 + 1) == float(2**53). A JIT that widens int to float without checking the mantissa width would silently drop low bits.
 #

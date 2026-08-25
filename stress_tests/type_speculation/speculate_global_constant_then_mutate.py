@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_global_constant_then_mutate
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates the global `CONST` is the int 42 and may inline it as a constant. Then the global is mutated. The JIT must invalidate any compiled code that embedded the constant.
 #

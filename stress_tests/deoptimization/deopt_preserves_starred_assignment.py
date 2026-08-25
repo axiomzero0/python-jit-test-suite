@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_starred_assignment
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Starred unpacking `a, *b, c = ...`. Deopt must preserve the list `b`.
 #

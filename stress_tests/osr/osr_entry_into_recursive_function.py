@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_entry_into_recursive_function
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: OSR into a recursive function. The compiled frame must preserve the call chain so the recursion can return correctly.
 #

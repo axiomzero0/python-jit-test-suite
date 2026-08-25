@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: overlapping_lifetimes_nested_loops
 # category: register_alloc
-# opt_state: (runs across all 6 states)
 #
 # Target: Two variables with overlapping lifetimes live across an outer and an inner loop. The inner variable dies at the end of each inner iteration but the outer variable lives across the entire inner loop. A buggy allocator that didn't model nested scopes correctly would either free the outer variable too early or hold the inner variable for too long, wasting registers.
 #

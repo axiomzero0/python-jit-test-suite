@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_method_add_to_base
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: Call site `o.f()` is cached with A.f. Then a method `f` is added to base class B (parent of A). The IC must invalidate and pick up B.f for instances of B.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: float_addition_non_associative
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: Float addition is not associative: reordering operands changes the result. A JIT that reassociates sums for vectorization would change observable results; math.fsum and Kahan summation recover the correct total.
 #

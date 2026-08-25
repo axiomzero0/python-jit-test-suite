@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: float_infinity_arithmetic
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: Infinity arithmetic: inf+x==inf, inf-inf==NaN, 1/inf==0. A JIT that elides overflow checks or assumes finite operands would miscompute these.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: string_percent_format_operator
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: The % operator on strings performs printf-style formatting. The JIT must support %d/%s/%f/%x/%o/%r format specifiers, named-argument formatting via a dict, and width/precision modifiers.
 #

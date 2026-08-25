@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: register_pressure_from_inlined
 # category: register_alloc
-# opt_state: (runs across all 6 states)
 #
 # Target: A function is called multiple times in close succession. If the JIT inlines each call, the combined locals of all the inlined copies create high register pressure. A buggy allocator that didn't account for the inlined frames' locals would either fail to inline (missed optimization) or spill incorrectly and corrupt values.
 #

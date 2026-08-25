@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_call_protocol_function_to_callable
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: Call site caches a Python function (PyFunction_Type with vectorcall). Then a callable object is passed, which uses tp_call instead. The IC must transition.
 #

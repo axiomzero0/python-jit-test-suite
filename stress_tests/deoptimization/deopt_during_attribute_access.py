@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_during_attribute_access
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `o.x` is an instance dict lookup at offset N. Then `o.x` becomes a property. Deopt must call the descriptor.
 #

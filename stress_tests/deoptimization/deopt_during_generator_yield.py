@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_during_generator_yield
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Generator yields from inside an optimized loop. Deopt happens at the yield point. The generator's suspended frame must be correctly reconstructed.
 #

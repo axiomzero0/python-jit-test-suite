@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: finalizer_that_raises_is_swallowed
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: An exception raised in __del__ must be swallowed by the runtime (printed to stderr, not propagated). If the JIT's finalizer dispatch let the exception escape into the dealloc path, the caller would see a spurious RuntimeError.
 #

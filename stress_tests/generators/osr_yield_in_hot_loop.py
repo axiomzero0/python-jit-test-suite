@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_yield_in_hot_loop
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: A generator yields from inside a hot loop that the JIT will OSR into. Each ``yield`` suspends the frame mid-loop; on resume the compiled frame must reconstruct the loop counter, the accumulator, and the bytecode position exactly. A JIT that caches loop state across a yield boundary will produce wrong intermediate values.
 #

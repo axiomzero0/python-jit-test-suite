@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_simple_class_get_subclass
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `o.x` is a simple attribute load on class A with a fixed offset. Then a subclass B that overrides `x` via a property is passed. The JIT must deopt the inlined attribute load and call the property descriptor.
 #

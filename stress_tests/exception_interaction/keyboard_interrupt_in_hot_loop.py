@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: keyboard_interrupt_in_hot_loop
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: KeyboardInterrupt inherits from BaseException, not Exception. A JIT that compiles ``except Exception:`` as a catch-all would incorrectly swallow KeyboardInterrupt. This test verifies that ``except Exception:`` does NOT catch KeyboardInterrupt, while ``except BaseException:`` does.
 #

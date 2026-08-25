@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_with_many_live_variables
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: OSR with 10+ live variables. Stress-tests the register spill/reload logic during state reconstruction.
 #

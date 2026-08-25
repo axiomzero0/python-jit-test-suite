@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_function_call_then_callable_obj
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `f()` is a direct function call. Then a callable object (with __call__) is passed. The deopt must use the tp_call slot instead of the inlined function pointer.
 #

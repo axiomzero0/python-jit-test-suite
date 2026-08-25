@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: slice_with_positive_negative_step
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: Slicing supports start, stop, and step, where step may be negative (reverse). The JIT must handle the empty-range edge cases and the boundary conditions for negative step.
 #

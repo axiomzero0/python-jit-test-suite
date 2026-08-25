@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_attribute_offset_then_add_slot
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `o.x` is at a fixed memory offset. Then the class is mutated (a __slots__ entry added or a new class attribute), invalidating the offset cache. The JIT must re-lookup the attribute.
 #

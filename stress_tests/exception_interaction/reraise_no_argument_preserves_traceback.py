@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: reraise_no_argument_preserves_traceback
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: Bare ``raise`` (no argument) re-raises the current exception with its original traceback intact. The test verifies this across a deep call stack where each frame re-raises. A JIT must preserve the exception state across deopt at each level.
 #

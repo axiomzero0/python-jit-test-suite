@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: decorate_method_at_runtime
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: An existing method is wrapped with a decorator at runtime. Subsequent calls must invoke the wrapper, which itself calls the original. The IC for `c.f()` must invalidate to pick up the new wrapper as the resolved method.
 #

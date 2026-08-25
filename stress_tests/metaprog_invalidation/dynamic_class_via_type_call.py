@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: dynamic_class_via_type_call
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: A new class is created by calling type(name, bases, dict) and used immediately. The JIT cannot have any precompiled cache for this brand-new class; lookups must resolve via the freshly built MRO.
 #

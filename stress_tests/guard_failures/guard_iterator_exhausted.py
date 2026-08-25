@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_iterator_exhausted
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Iterator `has_next` guard fails when the iterator is exhausted earlier than expected.
 #

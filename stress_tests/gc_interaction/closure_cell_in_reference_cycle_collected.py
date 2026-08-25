@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: closure_cell_in_reference_cycle_collected
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A closure cell that participates in a reference cycle (the captured variable points back at the closure) must be collected by the cyclic GC. A JIT that represented the closure cell as a raw pointer (breaking GC tracing) would leak it.
 #

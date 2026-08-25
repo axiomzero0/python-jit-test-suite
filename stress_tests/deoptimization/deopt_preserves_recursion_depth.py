@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_preserves_recursion_depth
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Recursive function. Deopt happens at depth N. The interpreter must continue with the correct recursion depth and locals at each level.
 #

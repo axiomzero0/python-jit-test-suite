@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: async_generator_async_for
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: An async generator (``async def`` with ``yield``) suspends on the event loop rather than the bytecode frame, but the resumable-frame requirement is identical. ``async for`` must drive the generator through every suspension, and a JIT that compiles the async-for loop must keep the async generator frame alive across ``await`` points.
 #

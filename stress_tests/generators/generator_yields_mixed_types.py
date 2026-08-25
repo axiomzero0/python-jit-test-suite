@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: generator_yields_mixed_types
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: Type speculation on the yielded value assumes a stable type. This generator deliberately yields int, then float, then str, then list, then dict across consecutive yields. The JIT's yield-site type profile must invalidate and the consumer must receive each value with its correct type.
 #

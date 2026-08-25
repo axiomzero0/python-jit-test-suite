@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: list_int_then_str_type_change
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A list of ints is built up; then a string is appended. The element type spec changes from 'list[int]' to 'list[object]'. The JIT must invalidate any specialized fast path that assumed homogeneous int elements.
 #

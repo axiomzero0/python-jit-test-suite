@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: dict_comprehension_with_collisions
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: A dict comprehension builds a dict with 100 keys whose __hash__ all return 0, forcing a long collision chain. Lookups must use __eq__ to disambiguate. The JIT cannot rely on hash equality as a proxy for key equality.
 #

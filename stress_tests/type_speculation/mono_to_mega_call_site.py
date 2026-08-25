@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: mono_to_mega_call_site
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: A call site `o.f()` is called with the same class for 1000 iterations, allowing the JIT to inline and emit a monomorphic inline cache. Then 6 different classes are passed, blowing past the megamorphic threshold. The IC must transition mono -> poly -> mega without losing any prior call results.
 #

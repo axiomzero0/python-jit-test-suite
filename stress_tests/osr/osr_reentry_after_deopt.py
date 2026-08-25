@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_reentry_after_deopt
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: Function deopts mid-loop. After deopt, the interpreter runs for a while, then the JIT re-optimizes and OSRs back in. The second optimization must be correct.
 #

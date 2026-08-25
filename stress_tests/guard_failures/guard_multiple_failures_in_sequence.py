@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_multiple_failures_in_sequence
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Multiple guards fail in sequence. Each failure should trigger deopt, and the interpreter should handle the next failure correctly.
 #

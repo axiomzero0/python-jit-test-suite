@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: operator_precedence_evaluation_order
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: A complex expression mixes arithmetic, power, unary, bitwise, and shift operators. The JIT must emit operations in CPython's documented precedence order, evaluating each operand exactly once.
 #

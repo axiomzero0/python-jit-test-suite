@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_loop_count_then_unbounded
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `range(N)` produces a known-size iterator and may unroll the loop. Then a generator of unknown size is passed. The deopt must handle the unbounded iteration.
 #

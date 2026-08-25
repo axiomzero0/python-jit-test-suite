@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_depends_on_runtime_condition
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: Whether an object escapes is determined by a runtime value the JIT cannot predict at compile time. A correct analysis must conservatively assume the object escapes and heap-allocate it on every call. A buggy analysis that speculated on the non-escaping case would corrupt the state observed through the escaped reference.
 #

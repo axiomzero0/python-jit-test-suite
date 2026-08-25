@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_int_to_bigint
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: Int size guard `fits in 64 bits` fails on overflow.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_dict_keys_version_change
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT caches dict lookups by the dict's keys version. Adding a new key bumps the version, invalidating the cache.
 #

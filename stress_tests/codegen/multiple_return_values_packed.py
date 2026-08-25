@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: multiple_return_values_packed
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: `return a, b, c` builds a tuple and returns it. The caller can then unpack or treat it as a single value. The JIT must build the tuple at the return site, not elide it even if the caller immediately unpacks.
 #

@@ -30,6 +30,7 @@ Failure-mode taxonomy:
     14_container_repr        List->dict transitions, shape changes
     15_closure_lifetime      Closure variable representation, lifetime
     16_metaprog_invalidation Runtime mutation that invalidates assumptions
+    17_python_316_features   Python 3.16-era features (PEP 649/703/750/659)
 """
 
 from __future__ import annotations
@@ -89,6 +90,7 @@ _CATEGORY_MODULE_NAMES = (
     "container_repr",
     "closure_lifetime",
     "metaprog_invalidation",
+    "python_316_features",
 )
 
 _ALL_MODULES = []

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: escape_conditionally_in_branch
 # category: escape_analysis
-# opt_state: (runs across all 6 states)
 #
 # Target: An object escapes only on one branch of an if/else. A correct escape analysis must conservatively assume the object escapes on every path where escape is possible. A buggy analysis that only considered the non-escaping branch would corrupt the escaping branch.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: osr_with_comprehension
 # category: osr
-# opt_state: (runs across all 6 states)
 #
 # Target: OSR into a list comprehension's implicit loop. The comprehension's hidden state (the result list, the iterator, the condition) must all be reconstructed.
 #

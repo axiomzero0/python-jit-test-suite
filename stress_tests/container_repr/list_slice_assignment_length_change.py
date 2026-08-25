@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: list_slice_assignment_length_change
 # category: container_repr
-# opt_state: (runs across all 6 states)
 #
 # Target: Slice assignment replaces a sublist with another of different length, growing or shrinking the list. Extended slice assignment (with step) requires the replacement to have exactly the same length as the slice.
 #

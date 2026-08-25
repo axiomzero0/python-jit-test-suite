@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: custom_exception_init_raises
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A custom Exception subclass has an ``__init__`` that raises RuntimeError when called with a specific argument. The ``raise BadException('bad')`` statement first evaluates the constructor (which raises RuntimeError), so RuntimeError propagates — not BadException. A JIT must not cache the exception type and skip the constructor.
 #

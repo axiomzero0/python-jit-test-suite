@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: many_temporaries_complex_expr
 # category: register_alloc
-# opt_state: (runs across all 6 states)
 #
 # Target: A single expression introduces many simultaneously-live temporaries. The allocator must hold all of them at once (or spill and reload) to evaluate the expression. A buggy allocator that undercounted temporaries would reuse a register too early and corrupt the result.
 #

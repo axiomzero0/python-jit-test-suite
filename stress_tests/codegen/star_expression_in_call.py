@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: star_expression_in_call
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: A function call uses `*args` to unpack an iterable as positional arguments. The unpacking can be combined with positional and keyword args, and multiple iterables can be unpacked in the same call.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: bare_except_catches_systemexit
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: Bare ``except:`` (no type) catches *every* BaseException subclass, including SystemExit. A JIT that compiles the except clause as ``except Exception:`` would let SystemExit escape. This test verifies the catch-all semantics.
 #

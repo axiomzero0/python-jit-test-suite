@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: generator_closure_var_changes_between_yields
 # category: generators
-# opt_state: (runs across all 6 states)
 #
 # Target: The generator reads a closure-cell variable on each resume. Between yields the cell is mutated via a setter. A JIT that hoists the cell read out of the loop (caching the value at compile time) will serve stale values after the mutation.
 #

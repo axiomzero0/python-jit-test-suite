@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: cycle_with_finalizer_still_finalized
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: Objects in a reference cycle that each have __del__ must still be finalized by the cyclic GC. A JIT that assumes 'cycle => no finalizer' would leak the objects (or skip their __del__).
 #

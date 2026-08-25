@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: deopt_during_chained_calls
 # category: deoptimization
-# opt_state: (runs across all 6 states)
 #
 # Target: Chained calls `a().b().c()`. Deopt happens at the second call. The first call's return value must be preserved.
 #

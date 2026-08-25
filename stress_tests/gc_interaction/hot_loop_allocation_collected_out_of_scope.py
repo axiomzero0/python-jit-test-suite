@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: hot_loop_allocation_collected_out_of_scope
 # category: gc_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: Objects allocated in a hot loop and observed only via weakref must be collected as soon as the local is rebound. A JIT that extends the object's lifetime across iterations (e.g. by keeping a hidden register reference) would leave stale weakrefs alive.
 #

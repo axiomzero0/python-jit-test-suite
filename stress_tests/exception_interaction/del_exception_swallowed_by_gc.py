@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: del_exception_swallowed_by_gc
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: ``__del__`` raises RuntimeError during garbage collection. CPython must print a warning to stderr but NOT propagate the exception. A JIT that runs ``__del__`` in a compiled frame must not let the exception escape into the mutator. All destructors must still run.
 #

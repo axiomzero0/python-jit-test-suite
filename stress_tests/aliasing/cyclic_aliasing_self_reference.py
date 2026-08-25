@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: cyclic_aliasing_self_reference
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: Construct two containers that reference each other (a cycle). The JIT must not assume acyclic reference graphs and must not loop forever when traversing. Equality and repr must terminate.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: live_across_exception_handler
 # category: register_alloc
-# opt_state: (runs across all 6 states)
 #
 # Target: Variables defined before a try block are used inside the corresponding except handler. The allocator must keep them live across the exception edge, which is hard to model because the edge is rarely taken. A buggy allocator that didn't account for exception edges would spill them at the try boundary and lose them when the exception fires.
 #

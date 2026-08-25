@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: closure_var_reassigned_mid_function
 # category: closure_lifetime
-# opt_state: (runs across all 6 states)
 #
 # Target: The captured variable is reassigned to a brand-new value mid function via a setter closure. The cell must reflect the new value immediately, and a separate accumulator closure must continue from the new value, not the old one.
 #

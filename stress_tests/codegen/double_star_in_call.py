@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: double_star_in_call
 # category: codegen
-# opt_state: (runs across all 6 states)
 #
 # Target: A function call uses `**kwargs` to unpack a dict as keyword arguments. Multiple dicts can be unpacked in the same call, mixed with explicit keyword args.
 #

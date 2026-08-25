@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: guard_string_to_bytes
 # category: guard_failures
-# opt_state: (runs across all 6 states)
 #
 # Target: String type guard fails when bytes is passed.
 #

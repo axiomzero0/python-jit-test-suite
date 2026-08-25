@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: ic_megamorphic_threshold
 # category: inline_caches
-# opt_state: (runs across all 6 states)
 #
 # Target: Call site transitions from monomorphic -> polymorphic -> megamorphic by passing more than 4 different types. The IC must handle each transition correctly.
 #

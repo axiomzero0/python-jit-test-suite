@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: bitops_large_ints
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: Bitwise operations on ints far larger than a machine word (2**100 | 2**200). A JIT that lowers these to native CPU instructions must fall back to bigint algorithms here.
 #

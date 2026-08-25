@@ -65,7 +65,7 @@ DEFAULT_COUNTS = {
     "ml_kernels": 10_000,
     "real_world": 10_000,
     "concurrency": 5_000,
-    "stress": 1_506,  # 251 hand-crafted tests × 6 opt states
+    "stress": 1_626,  # 271 hand-crafted tests × 6 opt states
 }
 
 

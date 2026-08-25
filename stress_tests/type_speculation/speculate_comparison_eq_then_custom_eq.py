@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_comparison_eq_then_custom_eq
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `a == b` uses the default __eq__ (pointer comparison). Then a class with custom __eq__ is passed. The deopt must call the custom __eq__.
 #

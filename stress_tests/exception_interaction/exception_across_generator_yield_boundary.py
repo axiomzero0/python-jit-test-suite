@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: exception_across_generator_yield_boundary
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: A generator raises ValueError on iteration 500, caught internally by a try/except around the yield. The JIT-compiled generator body must deopt at the yield point, inject the exception, and resume correctly so the consumer sees the right accumulated values.
 #

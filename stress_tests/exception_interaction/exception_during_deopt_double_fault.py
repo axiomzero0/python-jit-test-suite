@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: exception_during_deopt_double_fault
 # category: exception_interaction
-# opt_state: (runs across all 6 states)
 #
 # Target: Double-fault scenario: while handling a ValueError, the except handler triggers a type-speculation deopt (x changes from int to str) and then raises a *different* exception (RuntimeError). The JIT must preserve the original exception as __context__ of the new one across the deopt boundary.
 #

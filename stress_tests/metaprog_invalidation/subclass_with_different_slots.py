@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: subclass_with_different_slots
 # category: metaprog_invalidation
-# opt_state: (runs across all 6 states)
 #
 # Target: Subclasses of a slotted parent can add or omit slots, changing the instance memory layout. The JIT must respect the per-class layout when accessing slotted attributes.
 #

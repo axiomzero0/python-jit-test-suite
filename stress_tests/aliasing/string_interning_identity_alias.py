@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: string_interning_identity_alias
 # category: aliasing
-# opt_state: (runs across all 6 states)
 #
 # Target: `sys.intern` returns the canonical interned string object so two interns of equal value are the *same object* (`is` True). A JIT that uses object identity as a fast-path equality check would silently start returning True for unrelated string literals that happen to be interned.
 #

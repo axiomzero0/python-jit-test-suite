@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: phi_nodes_at_loop_header
 # category: register_alloc
-# opt_state: (runs across all 6 states)
 #
 # Target: A variable takes different values depending on which predecessor entered the loop header (the preheader initializes it; the back-edge updates it). The SSA form represents this with a phi node. The allocator must assign a register (or spill slot) that's consistent across both predecessors. A buggy allocator that didn't model phis would read garbage on the second iteration.
 #

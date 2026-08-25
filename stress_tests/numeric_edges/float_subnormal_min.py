@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: float_subnormal_min
 # category: numeric_edges
-# opt_state: (runs across all 6 states)
 #
 # Target: IEEE-754 subnormal numbers (smallest positive is ~5e-324). A JIT that flushes subnormals to zero would violate these assertions; halving the smallest subnormal must underflow to +0.0 while adding it to 1.0 must round away to 1.0.
 #

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # stress test: speculate_str_concat_get_int
 # category: type_speculation
-# opt_state: (runs across all 6 states)
 #
 # Target: JIT speculates `a + b` is str+str (fast path via PyUnicode_Concat). Then int+int is passed. The deopt must call the correct nb_add slot.
 #
